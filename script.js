@@ -9,8 +9,20 @@ function getComputerChoice() {
     } else {
         return "scissors";
     }
+
 }
 
+
+function getHumanChoice() {
+    let person = prompt("rock, paper or scissors?", "choose")
+ 
+    switch(person) {
+        case "rock":
+        case "paper":
+        case "scissors":
+            return getComputerChoice();
+    }
+ }
 
 
 
